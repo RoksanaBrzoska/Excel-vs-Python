@@ -9,6 +9,7 @@ import os
 def load_csv_data(path):
     """Loads a CSV file as a pandas DataFrame."""
 
+
     # If the path is a relative path make it absolute from this folder.
     if path.startswith("."):
         path = os.path.join(os.path.dirname(__file__), path)
